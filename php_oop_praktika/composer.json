@@ -1,0 +1,9 @@
+{
+  "autoload": {
+    "name": "OOP praktika",
+    "description": "OOP",
+    "psr-4": {
+      "TRANSPORT\\": "app"
+    }
+  }
+}
