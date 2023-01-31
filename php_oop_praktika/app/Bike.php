@@ -15,6 +15,8 @@ class Bike extends Transport
     }
     public function getBikePedals(){
         return [
+            $this->modelName,
+            $this->make,
             $this->bikePedals
         ];
     }
