@@ -15,6 +15,8 @@ class Car extends Transport
     }
     public function getNoOfDoors(){
         return [
+            $this->modelName,
+            $this->make,
             $this->noOfDoors
         ];
     }
