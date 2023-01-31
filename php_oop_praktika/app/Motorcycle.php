@@ -15,6 +15,8 @@ class Motorcycle extends Transport
     }
     public function getWheelCount(){
         return [
+            $this->modelName,
+            $this->make,
             $this->wheelCount
         ];
     }
