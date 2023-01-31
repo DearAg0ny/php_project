@@ -21,12 +21,12 @@ use TRANSPORT\Bike;
     $itemOne->setTopSpeed('250 km/h');
     $itemOne->setMaxNumberOfPeople('4');
     $itemOne->generateItemList($itemOne->getInfo());
-    $itemOne = new Car('Scott','Addict','Four');
-    $itemOne->generateItemList($itemOne->getNoOfDoors());
-    $itemOne = new Motorcycle('Kawasaki','Turbo','Two');
-    $itemOne->generateItemList($itemOne->getWheelCount());
-    $itemOne = new Bike('Scott','Addict','One Set');
-    $itemOne->generateItemList($itemOne->getBikePedals());
+    $itemTwo = new Car('Honda','Civic','Four');
+    $itemTwo->generateItemList($itemTwo->getNoOfDoors());
+    $itemThree = new Motorcycle('Kawasaki','Z900','Two');
+    $itemThree->generateItemList($itemThree->getWheelCount());
+    $itemFour = new Bike('Scott','Addict','One Set');
+    $itemFour->generateItemList($itemFour->getBikePedals());
     ?>
     </body>
 </html>
