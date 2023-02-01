@@ -17,7 +17,7 @@ use IT\Manager;
         <?php
         $workerOne = new Programmer('2 years','0 times','Senior','PHP');
         Render::generateItemList($workerOne->getProgrammerInfo());
-        $workerTwo = new Tester('3','1 time','Beta tester');
+        $workerTwo = new Tester('3 years','1 time','Beta tester');
         Render::generateItemList($workerTwo->getTesterInfo());
         $workerThree = new Manager('5 years','8 times','finance','3000 eur.');
         Render::generateItemList($workerThree->getManagerInfo());
