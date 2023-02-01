@@ -9,23 +9,18 @@ class Transport
     protected $make;
     protected $price;
     protected $weight;
-    protected $enginePower;
-    protected $topSpeed;
-    protected $maxNumberOfPeople;
+    protected $speed;
+    protected $seat;
+    protected $description;
 
-    public function changeTransportInfo($modelName, $make, $price, $weight, $topSpeed, $maxNumberOfPeople){
+    public function changeModel($modelName){
         $this->modelName = $modelName;
-        $this->make = $make;
-        $this->price = $price;
-        $this->weight = $weight;
-        $this->topSpeed = $topSpeed;
-        $this->maxNumberOfPeople = $maxNumberOfPeople;
     }
-    public function changeEnginePower($enginePower)
-    {
-        $this->enginePower = $enginePower;
+    public function changeMake($make){
+        $this->make = $make;
     }
     public function __construct($modelName, $make){
+        $this->id = rand(5,100);
         $this->modelName = $modelName;
         $this->make = $make;
     }
@@ -35,8 +30,9 @@ class Transport
             $this->make,
             $this->price,
             $this->weight,
-            $this->topSpeed,
-            $this->maxNumberOfPeople
+            $this->speed,
+            $this->seat,
+            $this->description
         ];
     }
     public function setPrice($price)
@@ -47,13 +43,16 @@ class Transport
     {
         $this->weight = $weight;
     }
-    public function setTopSpeed($topSpeed)
+    public function setSpeed($speed)
     {
-        $this->topSpeed = $topSpeed;
+        $this->speed = $speed;
     }
-    public function setMaxNumberOfPeople($maxNumberOfPeople)
+    public function setSeat($seat)
     {
-        $this->maxNumberOfPeople = $maxNumberOfPeople;
+        $this->seat = $seat;
+    }
+    public function setDescription($description){
+        $this->description = $description;
     }
     public function generateItemList($data){
         echo "<ul>";
